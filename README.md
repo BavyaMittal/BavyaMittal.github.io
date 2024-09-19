@@ -1,6 +1,6 @@
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio for Bavya Mittal
-> https://bavy](https://bavyamittal.github.io
+> https://bavyamittal.github.io
 
 > This repo is a clone of https://varadbhogayata.github.io
 
