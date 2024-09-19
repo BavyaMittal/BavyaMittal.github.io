@@ -16,6 +16,8 @@
 <a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_1.png">
 
 ## Activity 2 📋
+<a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_2.2.png">
+<a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_2.png">
 
 ## Features 📋
 ⚡️ Fully Responsive\
