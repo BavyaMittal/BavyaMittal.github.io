@@ -26,7 +26,7 @@
 ⭐For this project, I tried to implement a more space theme and the colours chosen are to be consistent with this theme 
 
 ## Activity 4 
-<a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_4.2.png">
+<a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity 4_2.png">
 <a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_4.png">
 
 ## Features 📋
