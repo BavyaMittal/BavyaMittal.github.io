@@ -23,7 +23,7 @@
 <a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_3.2.png">
 <a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_3.png">
 
-⭐For this project, I tried to implement a more space theme and the colours chosen are to be consistent with this theme\
+⭐For this project, I tried to implement a more space theme and the colours chosen are to be consistent with this theme \
 
 ## Features 📋
 ⚡️ Fully Responsive\
