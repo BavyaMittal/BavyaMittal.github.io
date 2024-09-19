@@ -13,7 +13,7 @@
 </p>
 
 ## Activity 1 📋
-<a href="https://bavyamittal.github.io" target="_blank"><img src="examples/BavyaWebsite.gif">
+<a href="https://bavyamittal.github.io" target="_blank"><img src="examples/Activity_1.png">
 
 ## Activity 2 📋
 
