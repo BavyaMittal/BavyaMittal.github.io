@@ -124,7 +124,7 @@
 /* body-color */
 
 body {
-  color: #FFFFFF;
+  color: #101522;
   background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 100%);
   font-size: 18px;
 }
@@ -157,7 +157,7 @@ a {
 
 blockquote {
   border-left: 5px solid #8A2Be2;
-  color: #FFFFFF;
+  color: #101522;
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
