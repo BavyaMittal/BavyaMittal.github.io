@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     let currentIndex = 0; // Start with the first project
-    const projectsToShow = 3; // Number of projects to show initially
     const totalProjects = projectCards.length;
   
     // Hide all projects initially
