@@ -74,45 +74,51 @@ const projects = [
 let currentIndex = 0; // Track the index of the last loaded project
 
 // Function to load a project and inject it into the "recent-projects" div
-function loadProject(index) {
-  const project = projects[index];
+function loadProject(index, count) {
+  for (let i = index; i < index + count && i< projects.length; i++) {
+    const project = projects[index];
   
   // Create project card dynamically
-  const projectCard = `
-    <div class="col s12 m6 l6">
-      <div class="card medium">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img src="${project.image}" alt="${project.title}" class="activator" style="height: 100%; width: 100%" />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator teal-text hoverline">${project.title}<i class="mdi-navigation-more-vert right"></i></span>
-          <p>${project.description}</p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
-          <ul>
-            <li><b>Tools:</b> ${project.tools}</li>
-            ${project.accomplishments.map(item => `<li>${item}</li>`).join('')}
-          </ul>
+    const projectCard = `
+      <div class="col s12 m6 l6">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img src="${project.image}" alt="${project.title}" class="activator" style="height: 100%; width: 100%" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator teal-text hoverline">${project.title}<i class="mdi-navigation-more-vert right"></i></span>
+            <p>${project.description}</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> ${project.tools}</li>
+              ${project.accomplishments.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  `;
+  ` ;
 
   // Insert the project into the recent-projects div
-  document.getElementById('recent-projects').innerHTML += projectCard;
+    document.getElementById('recent-projects').innerHTML += projectCard;
+  }
 }
+
+const projectsDisplayed =3; 
 
 // Sort projects by date (most recent first) and load the first project
 document.addEventListener('DOMContentLoaded', () => {
   projects.sort((a, b) => new Date(b.date) - new Date(a.date));
-  loadProject(currentIndex); // Load the most recent project
+  loadProject(currentIndex, projectsDisplayed); // Load the most recent project
+  currentIndex += projectsDisplayed
 });
 
 document.getElementById('load-more').addEventListener('click', function () {
   currentIndex++;
   if (currentIndex < projects.length) {
-    loadProject(currentIndex);
+    loadProject(currentIndex, projectsDisplayed);
+    currentIndex += projectsDisplayed
   } else {
     // If there are no more projects to load, disable the button
     this.disabled = true;
