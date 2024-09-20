@@ -76,7 +76,7 @@ let currentIndex = 0; // Track the index of the last loaded project
 // Function to load a project and inject it into the "recent-projects" div
 function loadProject(index, count) {
   for (let i = index; i < index + count && i< projects.length; i++) {
-    const project = projects[index];
+    const project = projects[i];
   
   // Create project card dynamically
     const projectCard = `
