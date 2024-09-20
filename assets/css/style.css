@@ -20,6 +20,10 @@
   height: auto;
 }
 
+.hidden {
+  display: none; 
+}
+
 .tracker {
   /* visibility: hidden; */
   position: fixed;
