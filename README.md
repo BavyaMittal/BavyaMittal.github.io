@@ -7,7 +7,7 @@
 ### Website Preview
 <p align="center"> 
   <kbd>
-    <a href="https://bavyamittal.github.io" target="_blank"><img src="examples/BavyaWebsite.gif">
+    <a href="https://bavyamittal.github.io" target="_blank"><img src="examples/BavyaWebsiteFinal.gif">
   </a>
   </kbd>
 </p>
