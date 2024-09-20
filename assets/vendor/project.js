@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     // Show the first 3 projects on page load
-    for (let i = 0; i < 3 && i < totalProjects; i++) {
+    for (let i = 0; i < 2 && i < totalProjects; i++) {
       showProject(i);
       currentIndex++;
     }
