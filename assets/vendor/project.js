@@ -40,9 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Handle "Load More" button click
     document.getElementById('load-more').addEventListener('click', function () {
       const projectsLeft = totalProjects - currentIndex;
-      const projectsToLoad = Math.min(projectsLeft, projectsToShow); // Load in batches of 3
-  
-      for (let i = 0; i < projectsToLoad; i++) {
+
+      for (let i = 0; i < projectsLeft; i++) {
         showProject(currentIndex);
         currentIndex++;
       }
