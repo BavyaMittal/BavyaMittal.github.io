@@ -115,11 +115,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('load-more').addEventListener('click', function () {
-  currentIndex++;
   if (currentIndex < projects.length) {
     loadProject(currentIndex, projectsDisplayed);
     currentIndex += projectsDisplayed
-  } else {
+  } 
+  else {
     // If there are no more projects to load, disable the button
     this.disabled = true;
     this.textContent = 'No More Projects';
